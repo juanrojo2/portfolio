@@ -90,18 +90,17 @@ img {
 header {
   width: 100%;
   height: 100vh;
-  margin-bottom: 10rem;
 }
 .top-nav {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: -100vh;
-  z-index: 60;
-  background: linear-gradient(to left, #050d20, #000000);
+  z-index: 100;
+  background: linear-gradient(to left, #020818, #0a0a0a);
   border-bottom-right-radius: 100%;
   border-bottom-left-radius: 100%;
-  transition: all 1s cubic-bezier(1, 0, 0, 1);
+  transition: all 700ms cubic-bezier(0.5, 0, 0, 0.5);
 }
 .nav-list {
   width: 100%;
@@ -109,6 +108,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 li {
   margin: 0 2rem;
@@ -134,24 +134,23 @@ li {
   position: fixed;
   left: 100%;
   transform: translateX(-100%);
-  background: linear-gradient(to left, #050d20, #000000);
+  background: linear-gradient(to left, #020818, #0a0a0a);
   width: 15rem;
   height: 15rem;
   border-bottom-left-radius: 100%;
-  z-index: 100;
+  z-index: 200;
 }
 .menu-toggler {
   position: fixed;
   top: 4rem;
   right: 4rem;
-  width: 5rem;
-  height: 4rem;
+  width: 5.5rem;
+  height: 3.5rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
-  z-index: 100;
-  transition: transform 1s ease-out;
+  transition: transform 700ms ease-in;
 }
 .menu-toggler.open {
   transform: rotate(-45deg);
@@ -159,8 +158,8 @@ li {
 .bar {
   background: linear-gradient(to left, #096fb3, #6e6e6e);
   width: 100%;
-  height: 5px;
-  border-radius: 1rem;
+  height: 0.6rem;
+  border-radius: 2rem;
   margin: 0;
   padding: 0;
 }
@@ -169,18 +168,18 @@ li {
 }
 .bar.start {
   transform-origin: right;
-  transition: transform 1s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 700ms ease;
 }
 .open .bar.start {
-  transform: rotate(-900deg) translateX(0.8rem);
+  transform: rotate(-900deg) translateX(1rem);
 }
 .open .bar.end {
-  transform: rotate(-900deg) translateX(-0.8rem);
+  transform: rotate(-900deg) translateX(-1rem);
 }
 .bar.end {
   align-self: flex-end;
   transform-origin: left;
-  transition: transform 1s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+  transition: transform 700ms ease;
 }
 .landing-text {
   position: absolute;
@@ -189,21 +188,19 @@ li {
   transform: translate(-50%, -50%);
   width: 100%;
   text-align: center;
-  z-index: 2;
 }
 .landing-text h1 {
-  font-size: 20rem;
+  font-size: 16rem;
   font-family: 'Big Shoulders Stencil Display', cursive;
   font-weight: 900;
   background: linear-gradient(to left, #096fb3, #c0bfbf);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 1rem;
+  padding: 2rem;
 }
 .landing-text h5 {
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 3rem;
 }
 /*End header*/
 
