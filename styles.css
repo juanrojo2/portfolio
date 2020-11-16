@@ -1,30 +1,31 @@
 /*Start global styles*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    color: #fff;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  user-select: none;
 }
-html{
-    font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+html {
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
 }
-body{
-    width: 100%;
-    height: 100%;
-    background: url("./images/bgpicture.jpg") no-repeat center fixed;
-    background-size: cover;
+body {
+  width: 100%;
+  height: 100%;
+  background: url("./images/bgpicture.jpg") no-repeat center fixed;
+  background-size: cover;
 }
-a{
-    text-decoration: none;
-    color: #e0e0e0;
+a {
+  text-decoration: none;
+  color: #e0e0e0;
 }
-p{
-    font-size: 1.8rem;
-    font-weight: 300;
+p {
+  font-size: 1.8rem;
+  font-weight: 300;
 }
-img{
-    width: 100%;
+img {
+  width: 100%;
 }
 /*End global styles*/
 
@@ -32,154 +33,154 @@ img{
 /*End reusable*/
 
 /*Start header*/
-header{
-    width: 100%;
-    height: 100vh;
+header {
+  width: 100%;
+  height: 100vh;
 }
-.top-nav{
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: -100vh;
-    z-index: 50;
-    background: linear-gradient(to left, #050d20, #000000);
-    border-bottom-right-radius: 100%;
-    border-bottom-left-radius: 100%;
-    transition: all 1s cubic-bezier(1, 0, 0, 1);
+.top-nav {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: -100vh;
+  z-index: 50;
+  background: linear-gradient(to left, #050d20, #000000);
+  border-bottom-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  transition: all 1s cubic-bezier(1, 0, 0, 1);
 }
-.nav-list{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.nav-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
-li{
-    margin: 0 2rem;
-    list-style-type: none;
-    display: inline-flexbox;
+li {
+  margin: 0 2rem;
+  list-style-type: none;
+  display: inline-flexbox;
 }
-.nav-link{
-    font-family: 'Kaushan Script', cursive;
-    font-size: 3rem;
-    padding: 1rem;
+.nav-link {
+  font-family: "Kaushan Script", cursive;
+  font-size: 3rem;
+  padding: 1rem;
 }
 .nav-link:hover,
-.nav-link:focus{
-    background: linear-gradient(to left, #096fb3, #6e6e6e);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nav-link:focus {
+  background: linear-gradient(to left, #096fb3, #6e6e6e);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.top-nav.open{
-    top: 0;
-    border-radius: initial;
+.top-nav.open {
+  top: 0;
+  border-radius: initial;
 }
 
-.menu-toggler{
-    position: fixed;
-    top: 3rem;
-    right: 4rem;
-    width: 5rem;
-    height: 4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    cursor: pointer; 
-    z-index: 100;
-    transition: transform 1s ease-out;
+.menu-toggler {
+  position: fixed;
+  top: 3rem;
+  right: 4rem;
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 100;
+  transition: transform 1s ease-out;
 }
 
-.menu-toggler.open{
-    transform: rotate(-45deg);
+.menu-toggler.open {
+  transform: rotate(-45deg);
 }
 
-.bar{
-    background: linear-gradient(to left, #096fb3, #6e6e6e);
-    width: 100%;
-    height: 5px;
-    border-radius: 1rem;
-    margin: 0;
-    padding: 0;
+.bar {
+  background: linear-gradient(to left, #096fb3, #6e6e6e);
+  width: 100%;
+  height: 5px;
+  border-radius: 1rem;
+  margin: 0;
+  padding: 0;
 }
-.bar.half{
-    width: 50%;
+.bar.half {
+  width: 50%;
 }
-.bar.start{
-    transform-origin: right;
-    transition: transform 1s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+.bar.start {
+  transform-origin: right;
+  transition: transform 1s cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
-.open .bar.start{
-    transform: rotate(-900deg) translateX(.8rem);
+.open .bar.start {
+  transform: rotate(-900deg) translateX(0.8rem);
 }
-.open .bar.end{
-    transform: rotate(-900deg) translateX(-.8rem);
+.open .bar.end {
+  transform: rotate(-900deg) translateX(-0.8rem);
 }
-.bar.end{
-    align-self: flex-end;
-    transform-origin: left;
-    transition: transform 1s cubic-bezier(0.54, -0.81, 0.57, 0.57);
+.bar.end {
+  align-self: flex-end;
+  transform-origin: left;
+  transition: transform 1s cubic-bezier(0.54, -0.81, 0.57, 0.57);
 }
-.landing-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    text-align: center;
-    z-index: 2;
+.landing-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  z-index: 2;
 }
-.landing-text h1{
-    font-size: 20rem;
-    font-family: 'Kaushan Script', cursive;
-    background: linear-gradient(to left, #096fb3, #c0bfbf);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding: 1rem;
-    user-select: none;
+.landing-text h1 {
+  font-size: 20rem;
+  font-family: "Kaushan Script", cursive;
+  background: linear-gradient(to left, #096fb3, #c0bfbf);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
 }
-.landing-text h5{
-    font-size: 2.4rem;
-    font-weight: 600;
+.landing-text h5 {
+  font-size: 2.4rem;
+  font-weight: 600;
 }
 /*End header*/
 
 /*Start about*/
-.about .container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.about-heading{
-    text-align: center;
-    text-transform: uppercase;
-    line-height: 0;
-    margin-bottom: 6rem;
+.about-heading {
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-bottom: 6rem;
 }
-.about-heading h1{
-    font-size: 10rem;
-    opacity: .3;
+.about-heading h1 {
+  font-size: 10rem;
+  opacity: 0.3;
 }
-.about-heading h6{
-    font-size: 3rem;
-    font-weight: 300;
+.about-heading h6 {
+  font-size: 3rem;
+  font-weight: 300;
 }
-.profile-img{
-    flex: 1;
-    margin-right: 5rem;
-    margin-left: 2rem;
+.profile-img {
+  flex: 1;
+  margin-right: 5rem;
+  margin-left: 2rem;
 }
-.about-details{
-    flex: 1;
+.about-details {
+  flex: 1;
 }
-.social-icons{
-    margin-top: 5rem;
+.social-icons {
+  margin-top: 5rem;
 }
-.social-icons i{
-    font-size: 5rem;
-    transition: color 1s;
+.social-icons i {
+  font-size: 5rem;
+  transition: color 1s;
 }
 /*End about*/
 
