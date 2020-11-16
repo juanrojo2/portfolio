@@ -448,6 +448,8 @@ li {
 @media screen and (max-width: 1244px){
   .nav-list{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .nav-list li {
     margin: 1rem 0;
