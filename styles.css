@@ -111,7 +111,7 @@ header {
   align-items: center;
   flex-wrap: wrap;
 }
-li {
+.nav-list > li {
   margin: 0 2rem;
   list-style-type: none;
 }
@@ -261,7 +261,7 @@ li {
 .details > p:last-of-type{
   margin-bottom: 1rem;
 }
-.social-icons i{
+.icon-link > i{
   flex-direction: row;
   font-size: 4rem;
   transition: color 400ms;
@@ -294,7 +294,7 @@ li {
   margin: 2rem;
   width: 45%;
 }
-.skill h1{
+.skill > h1{
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 2rem -2px 2rem 0;
@@ -309,13 +309,66 @@ li {
   display: flex;
   transform: rotate(-75deg);
 }
-.icon-container i{
+.icon-container > i{
   color: #096fb3;
   font-size: 5.5rem;
   margin: auto;
   transform: rotate(75deg);
 }
 /*End skills*/
+
+/*Start Experience timeline*/
+.timeline ul{
+  border-left: 5px solid #096fb3;
+  border-radius: 1rem;
+  background-color: rgba(3, 3, 3, 0.5);
+  margin: 3rem auto;
+  position: relative;
+  padding: 5rem;
+  list-style: none;
+  width: 65%;
+}
+.timeline h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
+.timeline .date{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  position: relative;
+}
+.timeline .date:last-of-type{
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border: none;
+}
+.timeline .date::before,
+.timeline .date::after{
+  position: absolute;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.timeline .date::before{
+  content: attr(data-date);
+  left: -20rem;
+  text-align: right;
+  min-width: 12rem;
+  font-size: 1.5rem;
+}
+.timeline .date::after{
+  content: '';
+  box-shadow: 0 0 0 6px #c0bfbf;
+  border-radius: 100%;
+  left: -5.8rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  background-color: #0f0e0e;
+}
+/*End Experience timeline*/
 
 /*Start portfolio*/
 .portfolio-item{
@@ -329,7 +382,6 @@ li {
   margin-bottom: 0;
 }
 .portfolio-img-container{
-  flex: 1;
   border-radius: 5%;
 }
 .portfolio-img{
@@ -369,60 +421,7 @@ li {
 }
 /*End portfolio*/
 
-/*Start Experience timeline*/
-.timeline ul{
-  border-left: 4px solid #096fb3;
-  border-radius: .8rem;
-  background-color: rgba(0, 0, 0, 0.5);
-  margin: 0 auto;
-  position: relative;
-  padding: 5rem;
-  list-style: none;
-  text-align: left;
-  width: 70%;
-}
-.timeline h1{
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin-bottom: 1rem;
-  opacity: 0.5;
-}
-.timeline .date{
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  position: relative;
-}
-.timeline .date:last-of-type{
-  padding-bottom: 0;
-  margin-bottom: 0;
-  border: none;
-}
-.timeline .date::before,
-.timeline .date::after{
-  position: absolute;
-  display: block;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.timeline .date::before{
-  content: attr(data-date);
-  left: -21rem;
-  text-align: right;
-  min-width: 12rem;
-  font-size: 1.7rem;
-}
-.timeline .date::after{
-  content: '';
-  box-shadow: 0 0 0 6px #c0bfbf;
-  border-radius: 100%;
-  left: -8rem;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-color: #0f0e0e;
-}
-/*End Experience timeline*/
+
 
 /*Start contact*/
 /*End contact*/
