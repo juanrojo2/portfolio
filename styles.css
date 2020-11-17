@@ -261,6 +261,19 @@ header {
 .details > p:last-of-type{
   margin-bottom: 1rem;
 }
+.icons-nav{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.icons-nav > li{
+  margin: 0;
+  list-style-type: none;
+}
+.icons-nav > li:first-of-type{
+  margin-right: 3rem;
+}
 .icon-link > i{
   flex-direction: row;
   font-size: 4rem;
@@ -292,12 +305,12 @@ header {
   align-items: center;
   padding: 1.5rem;
   margin: 2rem;
-  width: 45%;
+  width: 40%;
 }
 .skill > h1{
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 2rem -2px 2rem 0;
+  margin: 2rem 0px 2rem 0;
 }
 .icon-container{
   width: 10rem;
@@ -453,8 +466,8 @@ header {
   0%{
     box-shadow: 0 0 0 0 rgba(9, 111, 179, 0.99);
   }
-  70%{
-    box-shadow: 0 0 0 2rem rgba(9, 111, 179, 0);
+  60%{
+    box-shadow: 0 0 0 1.5rem rgba(9, 111, 179, 0);
   }
   100%{
     box-shadow: 0 0 0 0 rgba(9, 111, 179, 0);
@@ -463,45 +476,15 @@ header {
 /*End animations*/
 
 /*Start media queries*/
-@media screen and (max-width: 1244px){
-  .nav-list{
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .nav-list li {
-    margin: 1rem 0;
-  }
-  .nav-link{
-    font-size: 3rem;
-  }
-  .section-heading h1{
-    font-size: 3rem;
-  }
+@media screen and (max-width: 1250px){
   .landing-text h1{
     font-size: 15rem;
   }
   .landing-text h5{
-    font-size: 2rem;
-  }
-  .about-heading h1{
-    font-size: 8rem;
-  }
-  .about-details .nav-list{
-    flex-direction: initial;
-  }
-  .about-details li{
-    margin: 0 2rem;
-  }
-  .icon-container{
-    width: 7rem;
-    height: 7rem;
-  }
-  .icon-container i{
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .timeline ul{
-    margin: 0 0 0 auto;
+    margin: 3rem auto;
   }
   .timeline .date::before{
     left: -20rem;
@@ -510,32 +493,42 @@ header {
     left: -5.9rem;
   }
 }
-@media screen and (max-width: 600px){
-  .section-heading h1{
+@media screen and (max-width: 970px){
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-list > li {
+    margin: 2rem;
+  }
+  .landing-text h1{
+    font-size: 12rem;
+  }
+  .landing-text h5{
     font-size: 2.5rem;
+  }
+  .about-details-container{
+    flex-direction: column;
+  }
+  .about,
+  .details,
+  .profile-img{
+    width: 100%;
+  }
+  .profile-img{
+    margin: 3rem 0;
   }
   .container-menu-toggler{
     width: 12rem;
     height: 12rem;
   }
-  .menu-toggler{
-    top: 2rem;
-    right: 2rem;
+  .menu-toggler {
+    top: 3rem;
+    right: 2.5rem;
   }
-  .landing-text h1{
-    font-size: 8rem;
-  }
-  .landing-text h5{
-    font-size: 1.7rem;
-  }
-  .nav-link{
-    font-size: 2rem;
-  }
-  .about .container{
-    flex-direction: column;
-  }
-  .profile-img{
-    margin: 0 0 7rem 0;
+}
+@media screen and (max-width: 800px){
+  p{
+    font-size: 1.5rem;
   }
   .portfolio-item{
     flex-direction: column;
@@ -548,18 +541,152 @@ header {
     margin: 0 auto;
     order: 2;
   }
+  .portfolio-item h1{
+    font-size: 3rem;
+  }
+  .portfolio-description h6{
+    font-size: 1.5rem;
+  }
+  .portfolio-description .cta{
+    font-size: 1.3rem;
+    padding: 0.7rem;
+  }
+}
+@media screen and (max-width: 700px){
+  .skill{
+    width: 90%;
+  }
+  .footer{
+    padding: 1.5rem 0;
+  }
+  .up{
+    width: 5rem;
+    height: 5rem;
+    top: -2.5rem;
+    right: 3rem;
+  }
+  .up i{
+    font-size: 2.5rem;
+  }
+  .footer p{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 600px){
+  .nav-link{
+    font-size: 2.5rem;
+  }
+  .section-heading h1{
+    font-size: 5rem;
+  }
+  .landing-text h1{
+    font-size: 10rem;
+  }
+  .landing-text h5{
+    font-size: 2rem;
+  }
+  .about > h4{
+    font-size: 3.5rem;
+  }
+  .about > h6{
+    font-size: 2rem;
+  }
+  .details > h4{
+    font-size: 3.5rem;
+  }
+  .portfolio-item h1{
+    font-size: 2.5rem;
+  }
+  .portfolio-description h6{
+    font-size: 1.4rem;
+  }
+  .timeline ul{
+    width: 80%;
+    right: -4.5rem;
+    padding: 2.5rem;
+  }
+  .timeline h1{
+    font-size: 2rem;
+  }
   .timeline p{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .timeline .date::before{
     font-size: 1.4rem;
-    left: -21rem;
+    left: -17rem;
   }
   .timeline .date::after{
-    left: -8rem;
+    left: -3.4rem;
+  }
+}
+@media screen and (max-width: 470px){
+  .section-heading h1{
+    font-size: 4rem;
+  }
+  .about > h4{
+    font-size: 3rem;
+  }
+  .about > h6{
+    font-size: 1.7rem;
+  }
+  .details > h4{
+    font-size: 3rem;
+  }
+  .details > h6{
+    font-size: 1.8rem;
+  }
+  .icon-link > i{
+    font-size: 3.3rem;
+  }
+  .timeline h1{
+    font-size: 1.7rem;
+  }
+  .timeline p{
+    font-size: 1.4rem;
+  }
+  .timeline .date::before{
+    font-size: 1.3rem;
+  }
+  .container-menu-toggler{
+    width: 9rem;
+    height: 9rem;
+  }
+  .menu-toggler {
+    top: 1.9rem;
+    right: 1.2rem;
+  }
+}
+@media screen and (max-width: 400px){
+  .section-heading h1{
+    font-size: 3.5rem;
+  }
+  .timeline .date::before{
+    font-size: 1.2rem;
+  }
+  .footer{
+    padding: 1.5rem 0;
   }
   .up{
-    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    top: -2rem;
+    right: 1.5rem;
+  }
+  .up i{
+    font-size: 2rem;
+  }
+  .footer p{
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 350px){
+  .section-heading h1{
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 300px){
+  .section-heading h1{
+    font-size: 2.5rem;
   }
 }
 /*End media queries*/
