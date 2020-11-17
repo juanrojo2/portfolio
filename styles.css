@@ -279,16 +279,20 @@ li {
   margin-top: 5rem;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: row;
   text-align: center;
   justify-content: center;
   align-self: center;
+  width: 100%;
 }
 .skill{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin: 2rem;
+  width: 45%;
 }
 .skill h1{
   text-transform: uppercase;
@@ -298,16 +302,16 @@ li {
 .icon-container{
   width: 10rem;
   height: 10rem;
-  border: 3px solid #096fb3;
+  border: 4px solid #096fb3;
   background-color: #c0bfbf;
   margin-bottom: 2rem;
-  border-radius: 25%;
+  border-radius: 20%;
   display: flex;
   transform: rotate(-75deg);
 }
 .icon-container i{
   color: #096fb3;
-  font-size: 5rem;
+  font-size: 5.5rem;
   margin: auto;
   transform: rotate(75deg);
 }
