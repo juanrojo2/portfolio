@@ -382,42 +382,39 @@ header {
   margin-bottom: 0;
 }
 .portfolio-img-container{
-  border-radius: 5%;
+  flex-shrink: 1.5;
 }
 .portfolio-img{
-  border-radius: 3%;
+  border-radius: 3rem;
 }
 .portfolio-description{
-  flex: 1;
   text-align: center;
+  flex-shrink: 2;
 }
 .portfolio-description h6{
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-transform: uppercase;
-  font-weight: 300;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 .portfolio-item h1{
-  font-size: 3rem;
-  font-weight: 300;
-  opacity: 0.5;
+  font-size: 4rem;
+  opacity: 0.7;
   margin: 1rem 0;
 }
 .portfolio-description .cta{
   display: inline-block;
-  margin-top: 2.5rem;
+  margin-top: 2rem;
   font-size: 1.5rem;
   text-transform: uppercase;
   background-color: #c0bfbf;
   padding: 1rem;
-  border-radius: 20px;
-  color: #000000;
-  transition: color 400ms;
+  border-radius: 3rem;
+  color: #0a0a0a;
+  transition: color 700ms;
 }
 .portfolio-description .cta:hover{
-  background-color: #c0bfbf;
-  color: #096fb3;
-
+  background-color: #0e0d0d;
+  color: #c0bfbf;
 }
 /*End portfolio*/
 
