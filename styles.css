@@ -5,6 +5,7 @@
   box-sizing: border-box;
   color: #eee;
   user-select: none;
+  scroll-behavior: smooth;
 }
 html {
   font-size: 11px;
@@ -277,9 +278,10 @@ header {
 .icons-nav > li{
   margin: 0;
   list-style-type: none;
-}
-.icons-nav > li:first-of-type{
   margin-right: 3rem;
+}
+.icons-nav > li:last-of-type{
+  margin-right: 0rem;
 }
 .icon-link > i{
   flex-direction: row;
@@ -287,10 +289,13 @@ header {
   transition: color 400ms;
 }
 .fa-twitter-square:hover{
-  color: #00acee;
+  color: #1da1f2;
 }
 .fa-linkedin:hover{
-  color: #0e76a8;
+  color: #0077b5;
+}
+.fa-github-square:hover{
+  color: #4078c0;
 }
 /*End profile*/
 
