@@ -48,7 +48,7 @@ img {
   font-size: 6rem;
   color: rgba(224, 219, 219, 0.9);
   text-transform: uppercase;
-  font-weight: 900;
+  font-weight: 700;
   position: relative;
   margin-bottom: 2rem;
 }
@@ -75,7 +75,7 @@ img {
 .section-heading > h6{
   font-size: 1.5rem;
   opacity: 0.7;
-  font-weight: 700;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 7rem;
 }
@@ -424,7 +424,7 @@ header {
   padding: 1rem;
   border-radius: 3rem;
   color: #0a0a0a;
-  transition: color 700ms;
+  transition: color 800ms;
 }
 .portfolio-description .cta:hover{
   background-color: #0e0d0d;
@@ -650,6 +650,9 @@ header {
   }
 }
 @media screen and (max-width: 767px){
+  html{
+    background: url("./images/bgpicture2.jpg") no-repeat center fixed;
+  }
   .nav-link{
     font-size: 2.5rem;
   }
