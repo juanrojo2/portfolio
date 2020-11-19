@@ -5,7 +5,6 @@
   box-sizing: border-box;
   color: #eee;
   user-select: none;
-  scroll-behavior: smooth;
 }
 html {
   font-size: 11px;
@@ -16,6 +15,7 @@ body {
   height: 100%;
   background: url("./images/bgpicture.jpg") no-repeat center fixed;
   background-size: cover;
+  scroll-behavior: smooth;
 }
 section{
   padding: 5rem 2rem;
@@ -70,7 +70,7 @@ img {
 .section-heading > h1::after{
   width: 1.5rem;
   height: 1.5rem;
-  border-radius: 100%;
+  border-radius: 20%;
   bottom: -1.4rem;
 }
 .section-heading > h6{
@@ -118,6 +118,7 @@ header {
 }
 .nav-link {
   font-family: 'Big Shoulders Stencil Display', cursive;
+  text-transform: uppercase;
   font-size: 4rem;
   padding: 1rem;
 }
@@ -161,7 +162,7 @@ header {
   background: linear-gradient(to left, #096fb3, #6e6e6e);
   width: 100%;
   height: 0.6rem;
-  border-radius: 2rem;
+  border-radius: 2px;
   margin: 0;
   padding: 0;
 }
@@ -193,8 +194,10 @@ header {
 }
 .landing-text > h1 {
   font-size: 16rem;
+  text-transform: uppercase;
   font-family: 'Big Shoulders Stencil Display', cursive;
   font-weight: 900;
+  letter-spacing: 5px;
   background: linear-gradient(to left, #096fb3, #c0bfbf);
   background-clip: text;
   -webkit-background-clip: text;
@@ -213,6 +216,10 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center;
+  background-color: #0e0d0d;
+  box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+  padding: 4rem;
+  border-radius: 1rem;
 }
 .about,
 .details,
@@ -315,9 +322,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1.5rem;
-  margin: 2rem;
-  width: 40%;
+  padding: 4rem;
+  margin: 2rem 1.5rem;
+  width: 30%;
+  background-color: #0e0d0d;
+  box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+  border-radius: 1rem;
 }
 .skill > h1{
   text-transform: uppercase;
@@ -330,13 +340,14 @@ header {
   height: 1.5rem;
   background-color:#c0bfbf;
   border: 2px solid #096fb3;
-  border-radius: 0.6rem;
+  border-radius: 0.4rem;
   margin-top: 1rem;
 }
 .progress-bar > div{
   height: 100%;
   background: linear-gradient(to right, #096fb3, #474444);
-  border-radius: 0.3rem;
+  border-bottom-right-radius: 0.2rem;
+  border-top-right-radius: 0.2rem;
 }
 #language-progress,
 #css-progress{
@@ -377,12 +388,13 @@ header {
 .timeline > ul{
   border-left: 5px solid #096fb3;
   border-radius: 1rem;
-  background-color: rgba(3, 3, 3, 0.5);
+  background-color: #0e0d0d;
   margin: 3rem auto;
   position: relative;
   padding: 5rem;
   list-style: none;
   width: 65%;
+  box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
 }
 .timeline h1{
   font-size: 3rem;
@@ -417,8 +429,8 @@ header {
 }
 .timeline .date::after{
   content: '';
-  box-shadow: 0 0 0 6px #c0bfbf;
-  border-radius: 100%;
+  box-shadow: 0 0 0 4px #c0bfbf;
+  border-radius: 20%;
   left: -5.8rem;
   height: 1.3rem;
   width: 1.3rem;
@@ -441,11 +453,15 @@ header {
   flex-shrink: 1.5;
 }
 .portfolio-img{
-  border-radius: 3rem;
+  border-radius: 2rem;
 }
 .portfolio-description{
   text-align: center;
   flex-shrink: 2;
+  background-color: #0e0d0d;
+  box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+  padding: 4rem;
+  border-radius: 1rem;
 }
 .portfolio-description h6{
   font-size: 2rem;
@@ -464,12 +480,12 @@ header {
   text-transform: uppercase;
   background-color: #c0bfbf;
   padding: 1rem;
-  border-radius: 3rem;
+  border-radius: 0.8rem;
   color: #0a0a0a;
-  transition: color 800ms;
+  transition: color 400ms;
 }
 .portfolio-description .cta:hover{
-  background-color: #0e0d0d;
+  background-color: #353333;
   color: #c0bfbf;
 }
 /*End portfolio*/
@@ -478,25 +494,25 @@ header {
 .footer{
   width: 100%;
   text-align: center;
-  background-color: #0e0d0dc0;
-  padding: 2rem 0;
+  background-color:  #0e0d0d;
+  padding: 1rem 0;
   position: relative;
 }
 .up{
   position: absolute;
-  width: 6rem;
-  height: 6rem;
+  width: 5.5rem;
+  height: 5.5rem;
   background-color: #eee;
-  top: -3rem;
+  top: -2.75rem;
   right: 5rem;
-  border-radius: 100%;
+  border-radius: 20%;
   display: flex;
   cursor: pointer;
   animation: pulse 4s infinite;
 }
 .up > i{
   color: #0e0d0d;
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin: auto;
 }
 .footer > p{
@@ -670,6 +686,9 @@ header {
   .profile-img{
     margin: 3rem 0;
   }
+  .skill{
+    width: 40%;
+  }
   .portfolio-item{
     flex-direction: column;
   }
@@ -680,6 +699,9 @@ header {
   .portfolio-description{
     margin: 0 auto;
     order: 2;
+  }
+  .portfolio-item:last-of-type{
+    margin-bottom: 4rem;
   }
   .portfolio-item h1{
     font-size: 3rem;
@@ -744,9 +766,6 @@ header {
   .skill{
     width: 90%;
   }
-  .footer{
-    padding: 1.5rem 0;
-  }
   .up{
     width: 5rem;
     height: 5rem;
@@ -761,8 +780,27 @@ header {
   }
 }
 @media screen and (max-width: 420px){
+  section{
+    padding: 2.5rem 1rem;
+  }
+  .container{
+    width: 70%;
+  }
+  .container-menu-toggler{
+    width: 9rem;
+    height: 9rem;
+  }
+  .menu-toggler {
+    top: 1.9rem;
+    right: 1.2rem;
+  }
   .section-heading > h1{
     font-size: 3.5rem;
+  }
+  .about-details-container{
+    background-color: #0e0d0d;
+    box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+    padding: 2rem;
   }
   .about > h4,
   .details > h4{
@@ -773,8 +811,31 @@ header {
   .details > h6{
     font-size: 1.7rem;
   }
+  .profile-img > img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .icons-nav{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .icons-nav > li{
+    margin: 1rem 0.7rem;
+  }
   .icon-link > i{
     font-size: 3.3rem;
+  }
+  
+  .skill{
+    background-color: #0e0d0d;
+    box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+    width: 100%;
+  }
+  .timeline > ul{
+    background-color: #0e0d0d;
+    box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+    width: 80%;
+    padding: 2rem 1rem;
   }
   .timeline h1{
     font-size: 1.7rem;
@@ -783,18 +844,19 @@ header {
     font-size: 1.4rem;
   }
   .timeline .date::before{
+    font-size: 1.4rem;
+    left: -15rem;
+  }
+  .timeline .date::after{
+    left: -2.05rem;
+  }
+  .timeline .date::before{
     font-size: 1.3rem;
   }
-  .container-menu-toggler{
-    width: 9rem;
-    height: 9rem;
-  }
-  .menu-toggler {
-    top: 1.9rem;
-    right: 1.2rem;
-  }
-  .footer{
-    padding: 1.5rem 0;
+  .portfolio-description{
+    background-color: #0e0d0d;
+    box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+    padding: 2rem;
   }
   .up{
     width: 4rem;
@@ -809,17 +871,17 @@ header {
     font-size: 1.3rem;
   }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 374px){
   .section-heading > h1{
     font-size: 2.5rem;
   }
   .profile-img > img {
-    width: 15rem;
-    height: 15rem;
+    width: 12rem;
+    height: 12rem;
   }
   .timeline .date::before{
     font-size: 1.3rem;
-    left: -16.5rem;
+    left: -15rem;
   }
 }
 /*End media queries*/
