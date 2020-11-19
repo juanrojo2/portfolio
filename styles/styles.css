@@ -92,7 +92,7 @@ header {
   position: fixed;
   top: -100vh;
   z-index: 100;
-  background-color: #0f0e0e;
+  background-color: #000000;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
   transition: all 700ms cubic-bezier(0.5, 0, 0, 0.5);
@@ -133,7 +133,7 @@ header {
   position: fixed;
   left: 100%;
   transform: translateX(-100%);
-  background-color:#0f0e0e;
+  background-color:#000000;
   width: 15rem;
   height: 15rem;
   border-bottom-left-radius: 100%;
@@ -481,6 +481,9 @@ header {
 .timeline #cursos{
   border-left: 5px solid #3609b3;
 }
+#cursos a:hover{
+  color: #096fb3;
+}
 .timeline h1{
   font-size: 2.5rem;
   text-transform: uppercase;
@@ -625,10 +628,10 @@ header {
     font-size: 2.7rem;
   }
   .landing-text > h1{
-    font-size: 23rem;
+    font-size: 25rem;
   }
   .landing-text > h5{
-    font-size: 4.5rem;
+    font-size: 5rem;
   }
   .nav-link{
     font-size: 5rem;
@@ -685,6 +688,12 @@ header {
   p{
     font-size: 2.3rem;
   }
+  .landing-text > h1{
+    font-size: 20rem;
+  }
+  .landing-text > h5{
+    font-size: 4.5rem;
+  }
   .section-heading > h6{
     font-size: 2.5rem;
   }
@@ -740,12 +749,17 @@ header {
   .timeline > ul{
     margin: 3rem auto;
   }
+  .skill,
+  .attitude,
+  .hobby{
+    width: 40%;
+  }
   .timeline .date::before{
     font-size: 1.7rem;
     left: -20rem;
   }
   .timeline .date::after{
-    left: -5.9rem;
+    left: -4.8rem;
   }
 }
 @media screen and (max-width: 1054px){
@@ -813,7 +827,7 @@ header {
     padding: 0.7rem;
   }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 769px){
   .nav-link{
     font-size: 2.5rem;
   }
