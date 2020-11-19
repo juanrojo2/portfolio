@@ -100,8 +100,8 @@ header {
   top: -100vh;
   z-index: 100;
   background: linear-gradient(to left, #020818, #0a0a0a);
-  border-bottom-right-radius: 100%;
-  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
   transition: all 700ms cubic-bezier(0.5, 0, 0, 0.5);
 }
 .nav-list {
@@ -228,6 +228,11 @@ header {
   margin: 1rem;
   flex-shrink: 0;
 }
+.details{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
 .profile-img > img{
   width: 20rem;
   height: 20rem;
@@ -304,7 +309,84 @@ header {
 .fa-github-square:hover{
   color: #4078c0;
 }
+.cv-container .cv-btn{
+  display: inline-block;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  background-color: #c0bfbf;
+  color: #0a0a0a;
+  padding: 1rem;
+  border-radius: 0.8rem;
+  transition: color 400ms;
+}
+.cv-container:hover .cv-btn{
+  background-color: #353333;
+  color: #c0bfbf;
+}
 /*End profile*/
+
+/*Start attitudes*/
+.my-attitudes{
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+.attitude{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  margin: 2rem 1.5rem;
+  width: 30%;
+  background-color: #0e0d0d;
+  box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+  border-radius: 1rem;
+}
+.attitude > h1{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 2rem 0px 2rem 0;
+}
+/*End attitudes*/
+
+/*Start hobbies*/
+.my-hobbies{
+  margin-top: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+.hobby{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+  margin: 2rem 1.5rem;
+  width: 30%;
+  background-color: #0e0d0d;
+  box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+  border-radius: 1rem;
+}
+.hobby > h1{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 2rem;
+  margin: 2rem 0px 2rem 0;
+}
+/*End hobbies*/
 
 /*Start skills*/
 .my-skills{
