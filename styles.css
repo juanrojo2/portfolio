@@ -432,7 +432,8 @@ header {
   border-top-right-radius: 0.2rem;
 }
 #language-progress,
-#css-progress{
+#css-progress,
+#desing-progress{
   width: 80%;
 }
 #html-progress{
@@ -444,7 +445,8 @@ header {
 #react-progress{
   width: 55%;
 }
-#bootstrap-progress{
+#bootstrap-progress,
+#git-progress{
   width: 90%;
 }
 
@@ -745,7 +747,7 @@ header {
     left: -5.9rem;
   }
 }
-@media screen and (max-width: 1023px){
+@media screen and (max-width: 1054px){
   p{
     font-size: 1.6rem;
   }
