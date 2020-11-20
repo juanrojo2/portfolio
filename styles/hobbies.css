@@ -46,12 +46,6 @@
     }
 }
 
-@media screen and (max-width: 1365px) {
-    .skill {
-        width: 40%;
-    }
-}
-
 @media screen and (max-width: 1054px) {
     .hobby {
         width: 40%;
