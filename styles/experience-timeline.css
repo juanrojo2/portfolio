@@ -130,6 +130,9 @@
 }
 
 @media screen and (max-width: 420px) {
+    .experience>.container {
+        width: 70%;
+    }
     .timeline>ul {
         box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
         width: 80%;
@@ -154,8 +157,19 @@
 }
 
 @media screen and (max-width: 374px) {
+    .experience>.container {
+        width: 67%;
+    }
+    .timeline>ul {
+        width: 94%;
+        right: -3.2rem;
+        padding: 2.5rem;
+    }
     .timeline .date::before {
-        font-size: 1.3rem;
-        left: -15rem;
+        font-size: 1.2rem;
+        left: -16.1rem;
+    }
+    .timeline .date::after {
+        left: -3.3rem;
     }
 }

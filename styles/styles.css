@@ -61,5 +61,11 @@ img {
     }
 }
 
+@media screen and (max-width: 374px) {
+    p {
+        font-size: 1.4rem;
+    }
+}
+
 
 /*End media queries*/
