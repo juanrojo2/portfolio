@@ -1,0 +1,129 @@
+/*Start skills*/
+
+.my-skills {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    margin: 2rem 1.5rem;
+    width: 30%;
+    background-color: #0e0d0d;
+    box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+    border-radius: 1rem;
+}
+
+.skill>h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 2rem 0px 2rem 0;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 1.5rem;
+    background-color: #c0bfbf;
+    border: 2px solid #096fb3;
+    border-radius: 0.4rem;
+    margin-top: 1rem;
+}
+
+.progress-bar>div {
+    height: 100%;
+    background: linear-gradient(to right, #096fb3, #474444);
+    border-bottom-right-radius: 0.2rem;
+    border-top-right-radius: 0.2rem;
+}
+
+#language-progress,
+#css-progress,
+#desing-progress {
+    width: 80%;
+}
+
+#html-progress {
+    width: 100%;
+}
+
+#javascript-progress {
+    width: 70%;
+}
+
+#react-progress {
+    width: 55%;
+}
+
+#bootstrap-progress,
+#git-progress {
+    width: 90%;
+}
+
+.icon-container {
+    width: 10rem;
+    height: 10rem;
+    border: 4px solid #096fb3;
+    background-color: #c0bfbf;
+    margin-bottom: 2rem;
+    border-radius: 20%;
+    display: flex;
+    transform: rotate(-75deg);
+}
+
+.icon-container>i {
+    font-size: 5.5rem;
+    color: #096fb3;
+    margin: auto;
+    transform: rotate(75deg);
+}
+
+
+/*End skills*/
+
+@media screen and (min-width: 1920px) {
+    .skill>h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1566px) and (max-width: 1919px) {
+    .skill>h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .skill {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .skill {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .skill {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .skill {
+        box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+        width: 100%;
+    }
+}

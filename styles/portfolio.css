@@ -1,0 +1,129 @@
+/*Start portfolio*/
+
+.portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.portfolio-item:last-child {
+    margin-bottom: 0;
+}
+
+.portfolio-img-container {
+    flex-shrink: 1.5;
+}
+
+.portfolio-img {
+    border-radius: 2rem;
+}
+
+.portfolio-description {
+    text-align: center;
+    flex-shrink: 2;
+    background-color: #0e0d0d;
+    box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.portfolio-description h6 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+
+.portfolio-item h1 {
+    font-size: 4rem;
+    opacity: 0.7;
+    margin: 1rem 0;
+}
+
+.portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #c0bfbf;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    color: #0a0a0a;
+    transition: color 400ms;
+}
+
+.portfolio-description .cta:hover {
+    background-color: #353333;
+    color: #c0bfbf;
+}
+
+
+/*End portfolio*/
+
+@media screen and (min-width: 1920px) {
+    .portfolio-item h1 {
+        font-size: 6rem;
+    }
+    .portfolio-description h6 {
+        font-size: 2.8rem;
+    }
+    .portfolio-description .cta {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (min-width: 1566px) and (max-width: 1919px) {
+    .portfolio-item h1 {
+        font-size: 5rem;
+    }
+    .portfolio-description h6 {
+        font-size: 2.4rem;
+    }
+    .portfolio-description .cta {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .portfolio-item {
+        flex-direction: column;
+    }
+    .portfolio-img-container {
+        margin: 0 0 2rem 0;
+        order: 1;
+    }
+    .portfolio-description {
+        margin: 0 auto;
+        order: 2;
+    }
+    .portfolio-item:last-of-type {
+        margin-bottom: 4rem;
+    }
+    .portfolio-item h1 {
+        font-size: 3rem;
+    }
+    .portfolio-description h6 {
+        font-size: 1.7rem;
+    }
+    .portfolio-description .cta {
+        font-size: 1.5rem;
+        padding: 0.7rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .portfolio-item h1 {
+        font-size: 2.5rem;
+    }
+    .portfolio-description h6 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .portfolio-description {
+        box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+        padding: 2rem;
+    }
+}

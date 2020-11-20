@@ -1,0 +1,161 @@
+/*Start Experience timeline*/
+
+.timeline>ul {
+    border-radius: 1rem;
+    background-color: #0e0d0d;
+    margin: 3rem auto;
+    position: relative;
+    padding: 4rem;
+    list-style: none;
+    width: 65%;
+    box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+}
+
+.timeline #educacion {
+    border-left: 5px solid #0953b3;
+}
+
+.timeline #cursos {
+    border-left: 5px solid #3609b3;
+}
+
+#cursos a:hover {
+    color: #096fb3;
+}
+
+.timeline h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    opacity: 0.7;
+}
+
+.timeline .date {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    position: relative;
+}
+
+.timeline .date:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border: none;
+}
+
+.timeline .date::before,
+.timeline .date::after {
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.timeline .date::before {
+    content: attr(data-date);
+    left: -20rem;
+    text-align: right;
+    min-width: 12rem;
+    font-size: 2rem;
+}
+
+.timeline .date::after {
+    content: '';
+    box-shadow: 0 0 0 4px #c0bfbf;
+    border-radius: 20%;
+    left: -4.9rem;
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: #0f0e0e;
+}
+
+
+/*End Experience timeline*/
+
+@media screen and (min-width: 1920px) {
+    .timeline h1 {
+        font-size: 4rem;
+    }
+    .timeline .date::before {
+        font-size: 2.5rem;
+        left: -25rem;
+    }
+}
+
+@media screen and (min-width: 1566px) and (max-width: 1919px) {
+    .timeline .date::before {
+        font-size: 2.2rem;
+        left: -22rem;
+    }
+    .timeline h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .timeline h1 {
+        font-size: 2.8rem;
+    }
+    .timeline>ul {
+        margin: 3rem auto;
+    }
+    .timeline .date::before {
+        font-size: 1.7rem;
+        left: -20rem;
+    }
+    .timeline .date::after {
+        left: -4.8rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .timeline>ul {
+        width: 80%;
+        right: -4.5rem;
+        padding: 2.5rem;
+    }
+    .timeline h1 {
+        font-size: 2rem;
+    }
+    .timeline>p {
+        font-size: 1.5rem;
+    }
+    .timeline .date::before {
+        font-size: 1.4rem;
+        left: -17rem;
+    }
+    .timeline .date::after {
+        left: -3.4rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .timeline>ul {
+        box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+        width: 80%;
+        padding: 2rem 1rem;
+    }
+    .timeline h1 {
+        font-size: 1.7rem;
+    }
+    .timeline>p {
+        font-size: 1.4rem;
+    }
+    .timeline .date::before {
+        font-size: 1.4rem;
+        left: -15rem;
+    }
+    .timeline .date::after {
+        left: -2.05rem;
+    }
+    .timeline .date::before {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .timeline .date::before {
+        font-size: 1.3rem;
+        left: -15rem;
+    }
+}

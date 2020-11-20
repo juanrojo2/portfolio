@@ -1,0 +1,227 @@
+/*Start profile*/
+
+.about-details-container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #0e0d0d;
+    box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+    padding: 4rem;
+    border-radius: 1rem;
+}
+
+.about,
+.details,
+.profile-img {
+    width: 30%;
+    margin: 1rem;
+    flex-shrink: 0;
+}
+
+.details {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.profile-img>img {
+    width: 20rem;
+    height: 20rem;
+    box-shadow: 0px 0px 5px 10px #c0bfbf34;
+    border-radius: 100%;
+}
+
+.about>h4,
+.about>h5 {
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.about>h4 {
+    font-size: 4rem;
+    opacity: 0.7;
+}
+
+.about>h5 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.5;
+}
+
+.about>p {
+    text-align: left;
+}
+
+.details>h4,
+.details>h5 {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+.details>h4 {
+    font-size: 4rem;
+    opacity: 0.7;
+}
+
+.details>h5 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    opacity: 0.5;
+}
+
+.details>h6 {
+    font-size: 2rem;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+.details>p {
+    text-align: right;
+}
+
+.details>p:last-of-type {
+    margin-bottom: 1rem;
+}
+
+.icons-nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icons-nav>li {
+    margin: 0;
+    list-style-type: none;
+    margin-right: 3rem;
+}
+
+.icons-nav>li:last-of-type {
+    margin-right: 0rem;
+}
+
+.icon-link>i {
+    flex-direction: row;
+    font-size: 4rem;
+    transition: color 400ms;
+}
+
+.fa-twitter-square:hover {
+    color: #1da1f2;
+}
+
+.fa-linkedin:hover {
+    color: #0077b5;
+}
+
+.fa-github-square:hover {
+    color: #4078c0;
+}
+
+.cv-container .cv-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    background-color: #c0bfbf;
+    color: #0a0a0a;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    transition: color 400ms;
+}
+
+.cv-container:hover .cv-btn {
+    background-color: #353333;
+    color: #c0bfbf;
+}
+
+
+/*End profile*/
+
+@media screen and (min-width: 1920px) {
+    .profile-img>img {
+        width: 30rem;
+        height: 30rem;
+    }
+    .about>h4,
+    .details>h4 {
+        font-size: 6rem;
+    }
+    .about>h5,
+    .details>h5,
+    .details>h6 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1566px) and (max-width: 1919px) {
+    .profile-img>img {
+        width: 30rem;
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .about-details-container {
+        flex-direction: column;
+    }
+    .about,
+    .details,
+    .profile-img {
+        width: 100%;
+    }
+    .profile-img {
+        margin: 3rem 0;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .about>h4,
+    .details>h4 {
+        font-size: 3.5rem;
+    }
+    .about>h5,
+    .details>h5,
+    .details>h6 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .about-details-container {
+        box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+        padding: 2rem;
+    }
+    .about>h4,
+    .details>h4 {
+        font-size: 3rem;
+    }
+    .about>h5,
+    .details>h5,
+    .details>h6 {
+        font-size: 1.7rem;
+    }
+    .profile-img>img {
+        width: 15rem;
+        height: 15rem;
+    }
+    .icons-nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .icons-nav>li {
+        margin: 1rem 0.7rem;
+    }
+    .icon-link>i {
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .profile-img>img {
+        width: 12rem;
+        height: 12rem;
+    }
+}

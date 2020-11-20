@@ -1,0 +1,72 @@
+/*Start attitudes*/
+
+.my-attitudes {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+}
+
+.attitude {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    margin: 2rem 1.5rem;
+    width: 30%;
+    background-color: #0e0d0d;
+    box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
+    border-radius: 1rem;
+}
+
+.attitude>h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    margin: 2rem 0px 2rem 0;
+}
+
+
+/*End attitudes*/
+
+@media screen and (min-width: 1920px) {
+    .attitude>h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1566px) and (max-width: 1919px) {
+    .attitude>h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1365px) {
+    .attitude {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .attitude {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .attitude {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .attitude {
+        box-shadow: 0.8rem 0.8rem 0 0.1rem #c0bfbfb0;
+        width: 100%;
+    }
+}

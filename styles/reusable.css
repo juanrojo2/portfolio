@@ -1,0 +1,110 @@
+/*Start reusable*/
+
+.container {
+    width: 80%;
+    max-width: 200rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section-heading {
+    text-align: center;
+    margin: 5rem auto;
+}
+
+.section-heading>h1 {
+    font-size: 6rem;
+    color: rgba(224, 219, 219, 0.9);
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.section-heading>h1::before,
+.section-heading>h1::after {
+    content: '';
+    position: absolute;
+    bottom: -0.7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(240, 235, 235);
+}
+
+.section-heading>h1::before {
+    width: 20rem;
+    height: 3px;
+    border-radius: 2rem;
+}
+
+.section-heading>h1::after {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 20%;
+    bottom: -1.4rem;
+}
+
+.section-heading>h6 {
+    font-size: 1.5rem;
+    opacity: 0.7;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 7rem;
+}
+
+.has-margin-right {
+    margin-right: 8rem;
+}
+
+.has-margin-left {
+    margin-left: 8rem;
+}
+
+@media screen and (min-width: 1920px) {
+    .section-heading>h1 {
+        font-size: 7rem;
+    }
+    .section-heading>h6 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1566px) and (max-width: 1919px) {
+    .section-heading>h6 {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 1054px) {
+    .section-heading>h1 {
+        font-size: 5rem;
+    }
+    .section-heading>h6 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .section-heading>h1 {
+        font-size: 4.5rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .container {
+        width: 90%;
+    }
+    .section-heading>h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .section-heading>h1 {
+        font-size: 2.5rem;
+    }
+}
+
+
+/*End reusable*/
