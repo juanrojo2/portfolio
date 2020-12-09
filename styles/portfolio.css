@@ -23,7 +23,7 @@
 .portfolio-description {
     text-align: center;
     flex-shrink: 2;
-    background-color: #0e0d0d;
+    background-color: #000000;
     box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
     padding: 4rem;
     border-radius: 1rem;
@@ -50,12 +50,12 @@
     padding: 1rem;
     border-radius: 0.8rem;
     color: #0a0a0a;
-    transition: color 400ms;
+    transition: all 400ms;
 }
 
 .portfolio-description .cta:hover {
-    background-color: #353333;
-    color: #c0bfbf;
+    background-color: #096fb3;
+    color: #ffffff;
 }
 
 

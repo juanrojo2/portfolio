@@ -6,7 +6,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    background-color: #0e0d0d;
+    background-color: #000000;
     box-shadow: 1.2rem 1.2rem 0 0.1rem #c0bfbfb0;
     padding: 4rem;
     border-radius: 1rem;
@@ -29,8 +29,8 @@
 .profile-img>img {
     width: 20rem;
     height: 20rem;
-    box-shadow: 0px 0px 5px 10px #c0bfbf34;
     border-radius: 100%;
+    box-shadow: 0px 0px 20px 10px #75757548;
 }
 
 .about>h4,
@@ -108,16 +108,10 @@
     transition: color 400ms;
 }
 
-.fa-twitter-square:hover {
-    color: #1da1f2;
-}
-
-.fa-linkedin:hover {
-    color: #0077b5;
-}
-
+.fa-twitter-square:hover,
+.fa-linkedin:hover,
 .fa-github-square:hover {
-    color: #4078c0;
+    color: #096fb3
 }
 
 .cv-container .cv-btn {
@@ -129,12 +123,12 @@
     color: #0a0a0a;
     padding: 1rem;
     border-radius: 0.8rem;
-    transition: color 400ms;
+    transition: all 400ms;
 }
 
 .cv-container:hover .cv-btn {
-    background-color: #353333;
-    color: #c0bfbf;
+    background-color:#096fb3;
+    color: #ffffff;
 }
 
 
